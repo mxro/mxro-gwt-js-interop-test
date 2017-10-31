@@ -7,7 +7,7 @@ public class TestEntryPoint implements EntryPoint {
 
 	@Override
 	public void onModuleLoad() {
-		GWT.create(Add.class);
+		GWT.create(Read.class);
 		
 	}
 
