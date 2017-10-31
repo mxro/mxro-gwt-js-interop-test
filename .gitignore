@@ -1,0 +1,13 @@
+bin/
+target/
+**/target/
+MANIFEST.MF
+META-INF
+src/main/webapp/local
+src/main/webapp/local/WEB-INF
+src/main/gwt-unitCache/
+*.java.trace
+*.java._trace
+*.xtendbin
+*._trace
+
