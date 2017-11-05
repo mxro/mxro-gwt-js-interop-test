@@ -11,6 +11,19 @@ public class Read {
 
 	public static native Object resolve(JavaScriptObject o)/*-{ return o; }-*/;
 	
+	public static native void throwEx(String message)/*-{throw new Error(message); }-*/;
+	
+	public static native void trace()/*-{ console.trace(); }-*/;
+	
+	public static void assumeNotNull(Object object) {
+		trace();
+//		if (object == null) {
+//			throwEx("Hi there");
+//			return;
+//		}
+		object.toString();
+	}
+	
 	public static void value(Object... some) {
 		if (some != null && some.length > 0) {
 			

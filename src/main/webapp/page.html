@@ -5,7 +5,19 @@
 	<script src='local/local.nocache.js'></script>
 	
 	
-	
+	<script>
+		
+			setTimeout(function timerTrigger() {
+				
+				function test() {
+					//throw new Error("Hello!");
+					Read.assumeNotNull(null);
+				}
+				
+				test();
+			}, 100);
+		
+	</script>
 </body>
 
 </html>
