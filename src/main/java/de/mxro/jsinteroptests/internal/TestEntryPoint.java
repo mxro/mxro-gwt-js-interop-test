@@ -9,15 +9,19 @@ public class TestEntryPoint implements EntryPoint {
 
 	@Override
 	public void onModuleLoad() {
-		Console.log("Setting excpetion handler");
+		
+//		ExceptionTestNative.throwJsExceptionDirectly();
+		
 		GWT.setUncaughtExceptionHandler(new GWT.UncaughtExceptionHandler() {
+			
 			public void onUncaughtException(Throwable e) {
 				
-				Console.log(e.getClass().toString());
-				Console.log("Processing it "+e);
-				for (StackTraceElement elem : e.getStackTrace()) {
-					Console.log(elem.getFileName()+" "+elem.getMethodName());
-				}
+				
+				Console.log("Stacktrace for following error:");
+				Console.log(ExceptionTest.getTrace());
+				
+				ExceptionTest.rethrow(e);
+				
 			}
 			
 		});

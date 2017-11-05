@@ -9,12 +9,47 @@
 		
 			setTimeout(function timerTrigger() {
 				
-				function test() {
-					//throw new Error("Hello!");
-					Read.assumeNotNull(null);
+				function test1() {
+					ExceptionTest.triggerTypeErrorWhenNull(null);
 				}
 				
-				test();
+				test1();
+			}, 100);
+			
+			setTimeout(function timerTrigger() {
+				
+				function test2() {
+					ExceptionTest.throwJavaException();
+				}
+				
+				test2();
+			}, 100);
+			
+			setTimeout(function timerTrigger() {
+				
+				function test3() {
+					ExceptionTest.throwJsException();
+				}
+				
+				test3();
+			}, 100);
+			
+			setTimeout(function timerTrigger() {
+				
+				function test4() {
+					//ExceptionTest.throwJsExceptionDirectly();
+				}
+				
+				test4();
+			}, 100);
+			
+			setTimeout(function timerTrigger() {
+				
+				function test5() {
+					ExceptionTest.trace();
+				}
+				
+				test5();
 			}, 100);
 		
 	</script>
