@@ -2,7 +2,6 @@
 <!-- used for Local tests -->
 <module rename-to='local'>
 
-<inherits name="delight.gwt.console.Module" />
 
 	<inherits name="com.google.gwt.user.User" />
 
