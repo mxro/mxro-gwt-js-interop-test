@@ -3,8 +3,6 @@ package de.mxro.jsinteroptests.internal;
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.core.client.GWT;
 
-import delight.gwt.console.Console;
-
 public class TestEntryPoint implements EntryPoint {
 
 	@Override

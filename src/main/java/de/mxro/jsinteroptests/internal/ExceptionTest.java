@@ -1,8 +1,5 @@
 package de.mxro.jsinteroptests.internal;
 
-import com.google.gwt.core.client.JavaScriptObject;
-
-import delight.gwt.console.Console;
 import jsinterop.annotations.JsPackage;
 import jsinterop.annotations.JsType;
 

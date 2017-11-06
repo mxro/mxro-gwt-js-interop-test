@@ -27,11 +27,7 @@
 			<version>${gwtVersion}</version>
 		</dependency>
 		
-		<dependency>
-			<groupId>org.javadelight</groupId>
-			<artifactId>delight-gwt-console</artifactId>
-			<version>[0.0.1,)</version>
-		</dependency>
+		
 
 		<dependency>
 			<groupId>com.google.gwt</groupId>
@@ -40,12 +36,7 @@
 			<scope>provided</scope>
 		</dependency>
 
-		<dependency>
-			<groupId>de.mxro.process</groupId>
-			<artifactId>java-start-process</artifactId>
-			<version>0.1.1</version>
-			<scope>test</scope>
-		</dependency>
+		
 
 		<dependency>
 			<groupId>junit</groupId>
